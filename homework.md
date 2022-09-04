@@ -1,4 +1,4 @@
-## cinta作业一
+## CINTA作业一
 ### 1、
 ``` c++
 #include <iostream>
