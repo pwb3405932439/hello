@@ -60,4 +60,9 @@ int main()
 由a|b得：b=q<sub>1</sub>a;    
 由b|c得：c=q<sub>2</sub>b;  
 因为c=q<sub>2</sub>b=q<sub>2</sub>q<sub>1</sub>a, $~$所以c=q<sub>3</sub>a;  
-由c=q<sub>3</sub>a得：c|a.
+由c=q<sub>3</sub>a得：c|a.  
+  
+如果c|a，则a=q<sub>1</sub>c;  
+如果c|b，则b=q<sub>2</sub>c;  
+对于任意m和n，ma+nb=mq<sub>1</sub>c+nq<sub>2</sub>c=(mq<sub>1</sub>+nq<sub>2</sub>)c=q<sub>3</sub>c;  
+因为ma+nb=q<sub>3</sub>c，所以有c|(ma+nb).
