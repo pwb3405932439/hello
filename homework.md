@@ -59,5 +59,5 @@ int main()
 ### 4、
 由a|b得：b=q<sub>1</sub>a;    
 由b|c得：c=q<sub>2</sub>b;  
-因为c=q<sub>2</sub>b=q<sub>2</sub>q<sub>1</sub>a, 所以c=q<sub>3</sub>a;  
+因为c=q<sub>2</sub>b=q<sub>2</sub>q<sub>1</sub>a, $~$所以c=q<sub>3</sub>a;  
 由c=q<sub>3</sub>a得：c|a.
