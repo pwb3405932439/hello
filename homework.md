@@ -57,6 +57,6 @@ int main()
 }
 ```
 ### 4、
-由a|b得：b=q~1~a; 由b|c得：c=q~2~b;  
+由a|b得：b=q~1~a;   由b|c得：c=q~2~b;  
 因为c=q~2~b=q~2~q~1~a, 所以c=q~3~a;  
 由C=q~3~a得：c|a.
