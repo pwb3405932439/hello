@@ -107,4 +107,4 @@ int main(){
 等式右边=*(q<sub>1</sub>-q<sub>2</sub>)m mod m=0*;  
 又因为gcd(c,m)=1,所以b<sub>1</sub>-b<sub>2</sub>一定等于0,与假设矛盾。  
     
-综上，在 $mod$ m 的意义上存在唯一确定的整数值c<sup>-1</sup>,它使得 *cc<sup>-1</sup> = ( $mod$ m)* .
+综上，在 $mod$ m 的意义上存在唯一确定的整数值c<sup>-1</sup>,它使得 *cc<sup>-1</sup> = ( mod m)* .
