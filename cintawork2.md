@@ -99,12 +99,12 @@ int main(){
 唯一性：
 假设c在mod m意义上有存在两个不相等的逆元：b<sub>1</sub>和b<sub>2</sub> 且 b<sub>1</sub> $>$ b<sub>2</sub>;
 那么一定有:  
- c*b<sub>1</sub>=c*b<sub>2</sub>= k ( $mod$ m)  
+ c*b<sub>1</sub>=c*b<sub>2</sub>= k ( mod m)  
  所以c*b<sub>1</sub>=q<sub>1</sub>*m+k,c*b<sub>2</sub>=q<sub>2</sub>*m+k;  
 由上式相减得：c*(b<sub>1</sub>-b<sub>2</sub>)=(q<sub>1</sub>-q<sub>2</sub>)*m;  
 两边同时 $mod$ m:   
-等式左边=c*(b<sub>1</sub>-b<sub>2</sub>) $mod$ m;  
-等式右边=(q<sub>1</sub>-q<sub>2</sub>)*m $mod$ m=0;  
+等式左边=c*(b<sub>1</sub>-b<sub>2</sub>) mod m;  
+等式右边=(q<sub>1</sub>-q<sub>2</sub>)*m mod m=0;  
 又因为gcd(c,m)=1,所以b<sub>1</sub>-b<sub>2</sub>一定等于0,与假设矛盾。  
     
 综上，在 $mod$ m 的意义上存在唯一确定的整数值c<sup>-1</sup>,它使得 cc<sup>-1</sup> = ( $mod$ m) .
