@@ -93,12 +93,16 @@ int main(){
 }
 ```
 ### 10、
-存在性：
-  
-  因为正整数c和m是互素的，所以gcd(c,m)=1，则c必然存在mod m的意义上的乘法逆元；
+存在性：  
+因为正整数c和m是互素的，所以gcd(c,m)=1，则c必然存在mod m的意义上的乘法逆元；
  
 唯一性：
- 
-   假设c在mod m意义上有存在两个不相等的逆元：b<sub>1</sub>和b<sub>2</sub>  
-   那么一定有
+假设c在mod m意义上有存在两个不相等的逆元：b<sub>1</sub>和b<sub>2</sub>  
+那么一定有:  
+$$c*b<sub>1</sub>=c*b<sub>2</sub>= k (mod m)
+所以c*b<sub>1</sub>=q<sub>1</sub>m+k,c*b<sub>2</sub>=q<sub>2</sub>m+k;  
+由上式相减得：c*(b<sub>1</sub>-b<sub>2</sub>)=(q<sub>1</sub>-q<sub>2</sub>)m;  
+两边同时mod m:   
+等式左边=c*(b<sub>1</sub>-b<sub>2</sub>)mod m;
+等式右边=(q<sub>1</sub>-q<sub>2</sub>)m $mod$ m=0;
    
