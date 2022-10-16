@@ -29,6 +29,33 @@ x<sub>1</sub>=6 , x<sub>2</sub>=11
 解答：7<sup>1000</sup>的最后两个数位是01；  
 由$\phi$(100)=40得: 7<sup>1000</sup> mod 100 $\equiv$ 7<sup>40x25</sup> mod 100 $\equiv$ 1 mod 100 
 
+### 9.编程实现欧拉phi函数的计算，即输入正整数n，计算并返回 $\phi$ (n).
+```c++
+#include <iostream>
+using namespace std;
+int gcd(int a,int b)
+{
+	if(b!=0)return gcd(b,a%b);
+	else return a;
+}
+int phi(int n)
+{
+	int counter=0;
+	for(int i=1;i<n;i++)
+		if(gcd(n,i)==1)counter++;
+	return counter;
+}
+int main()
+{
+	int n;
+	while(true){
+		cin>>n;
+		cout<<phi(n)<<endl;
+	}
+	return 0;
+}
+```
+
 ### 10.设p是素数，计算(p-1)！mod p ,并找出规律，写成定理，并给出证明。
 p=2, (2-1)! mod 2 $\equiv$ 1 mod 2;  
 p=3, (3-1)! mod 3 $\equiv$ 2 mod 3;  
@@ -44,4 +71,3 @@ p=5, (5-1)! mod 5 $\equiv$ 4 mod 5;
 
 综上所述，  
 (p-1)！mod p $\equiv$ (p-1) mod p
-   
