@@ -27,7 +27,7 @@ x<sub>1</sub>=6 , x<sub>2</sub>=11
 
 ### 8.手动计算7<sup>1000</sup>的最后两个数位等于什么
 解答：7<sup>1000</sup>的最后两个数位是01；  
-由$\phi$(100)=40得: 7<sup>1000</sup> mod 100 $\equiv$ 7<sup>40x25</sup> mod 100 $\equiv$ 1 mod 100 
+由 $\phi$ (100)=40得: 7<sup>1000</sup> mod 100 $\equiv$ 7<sup>40x25</sup> mod 100 $\equiv$ 1 mod 100 
 
 ### 9.编程实现欧拉phi函数的计算，即输入正整数n，计算并返回 $\phi$ (n).
 ```c++
