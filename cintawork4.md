@@ -6,19 +6,17 @@
 #include<cmath>
 #include<algorithm>
 using namespace std;
-int phi(int n) // 求欧拉函数
+int gcd(int a,int b)
 {
-    int res=n;
-    for(int i=2; i*i<= n; i++)
-    {
-        if (n%i==0)
-            res = res/i*(i-1);
-        while (n%i== 0)
-            n/=i;
-    }
-    if(n>1)
-        res=res/n*(n-1);
-    return res;
+	if(b!=0)return gcd(b,a%b);
+	else return a;
+}
+int phi(int n)//求欧拉函数 
+{
+	int counter=0;
+	for(int i=1;i<n;i++)
+		if(gcd(n,i)==1)counter++;
+	return counter;
 }
 int pow(int x, int y,int mod)//快速幂 
 {
