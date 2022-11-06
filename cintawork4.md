@@ -1,8 +1,14 @@
-## CINTA作业三
-### 1.设*p=23,a=3*，使用费尔马小定理计算*a<sup>2019</sup> mod p*.
-3<sup>2019</sup> mod p = 3<sup>91 x (23-1)+17</sup> = 3<sup>17</sup>  = 16 (mod 23) 
+## CINTA作业四
+### 第六章习题
+#### 7.证明：  
+因为g<sub>0</sub>g<sub>1</sub>g<sub>2</sub>...g<sub>n</sub>g<sub>n</sub><sup>-1</sup>...g<sub>2</sub><sup>-1</sup>g<sub>1</sub><sup>-1</sup>g<sub>0</sub><sup>-1</sup> = g<sub>n</sub><sup>-1</sup>...g<sub>2</sub><sup>-1</sup>g<sub>1</sub><sup>-1</sup>g<sub>0</sub><sup>-1</sup>g<sub>0</sub>g<sub>1</sub>g<sub>2</sub>...g<sub>n</sub> = e
 
-### 2.使用费尔马小定理求解同余方程x<sup>50</sup> $\equiv$ 2 (mod 17)
+所以g<sub>0</sub>g<sub>1</sub>g<sub>2</sub>...g<sub>n</sub>的逆元是g<sub>n</sub><sup>-1</sup>...g<sub>2</sub><sup>-1</sup>g<sub>1</sub><sup>-1</sup>g<sub>0</sub><sup>-1</sup>。
+
+#### 8.证明：
+设H,K是群G的任意两个子群，G<sub>'</sub>为H和K的交集  
+因为H,K是群G的子群，所以H \cap K是群G的子集，即G<sub>'</sub>为G的子集  
+
 x<sup>50</sup> $\equiv$ 2 (mod 17) </br> x<sup>16x3+2</sup> $\equiv$ 2 (mod 17) </br> x<sup>2</sup> $\equiv$ 2 (mod 17)  
 令1 $\leqslant$ x $\leqslant$ 17,将1...17代入上式计算得:  
 x<sub>1</sub>=6 , x<sub>2</sub>=11  
