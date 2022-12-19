@@ -44,9 +44,10 @@ int main()
 using namespace std;
 int multiply(int a,int b)
 {
-	if(a==0||b==0)return 0;
-	if(b%2==0)return 2*multiply(a,b/2);
-	else return 2*multiply(a,b/2)+a;
+	int ans = 0;
+	for(int i=0;i<a;i++)
+		ans+=b;
+	return b;
  } 
 int main()
 {
